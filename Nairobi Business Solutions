@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Business Solutions | Professional Consulting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #3b82f6;
+            --accent: #f59e0b;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 120px 0;
+        }
+        
+        .service-box {
+            padding: 40px 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .btn-consult {
+            background: var(--accent);
+            color: var(--dark);
+            border-radius: 50px;
+            padding: 15px 40px;
+            font-weight: bold;
+            border: none;
+        }
+        
+        .btn-consult:hover {
+            background: #fbbf24;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Nairobi Business Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary ms-3">Free Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Grow Your Business</h1>
+            <p class="lead mb-4">Professional consulting services for Nairobi businesses. Strategy, finance, and operations expertise.</p>
+            <a href="#contact" class="btn btn-consult btn-lg me-3">Get Free Quote</a>
+            <a href="tel:0712345678" class="btn btn-outline-light btn-lg"><i class="fas fa-phone me-2"></i>Call Now</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <div class="icon-circle mx-auto">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Business Strategy</h4>
+                        <p class="text-muted">Market analysis, growth planning, and competitive positioning for your business.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <div class="icon-circle mx-auto">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Financial Consulting</h4>
+                        <p class="text-muted">Bookkeeping, tax planning, financial forecasting, and investment advice.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center">
+                        <div class="icon-circle mx-auto">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>HR & Operations</h4>
+                        <p class="text-muted">Staff management, process optimization, and operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Trusted by 50+ Nairobi Businesses</h2>
+                    <p class="lead">Since 2018, we've helped small and medium businesses streamline operations and increase profits.</p>
+                    <div class="row g-3 mt-3">
+                        <div class="col-6">
+                            <h3 class="text-primary">50+</h3>
+                            <small class="text-muted">Clients Served</small>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-primary">KES 500M+</h3>
+                            <small class="text-muted">Revenue Managed</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600" class="img-fluid rounded shadow" alt="Business meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Consultants</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300" alt="Team member">
+                        <h5>James Mwangi</h5>
+                        <p class="text-muted small">Managing Director<br>MBA, 15 years experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300" alt="Team member">
+                        <h5>Sarah Ochieng</h5>
+                        <p class="text-muted small">Financial Advisor<br>CPA, 10 years experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300" alt="Team member">
+                        <h5>David Kimani</h5>
+                        <p class="text-muted small">Operations Manager<br>Lean Six Sigma Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Schedule Free Consultation</h2>
+                    <form class="bg-white p-4 shadow rounded">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Company Name">
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select">
+                                    <option selected disabled>Select Service Needed</option>
+                                    <option>Business Strategy</option>
+                                    <option>Financial Consulting</option>
+                                    <option>HR & Operations</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" placeholder="Tell us about your business needs"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-3">Request Consultation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 Nairobi Business Solutions</p>
+            <p class="small mb-0">Westlands, Nairobi | 0712 345 678 | info@nairobibusiness.co.ke</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
